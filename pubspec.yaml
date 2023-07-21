@@ -1,5 +1,5 @@
 name: aliyun_arms
-description: A new Flutter plugin project.
+description: 应用实时监控服务 ARMS:作为云原生可观测平台，应用实时监控服务 ARMS 包含前端监控、应用监控、云拨测等模块。覆盖浏览器、小程序、APP、分布式应用、容器等不同可观测环境与场景。帮助企业实现全栈性能监控与端到端追踪诊断。提高监控效率，压降运维工作量
 version: 1.0.0
 homepage: "https://github.com/vsguji/aliyun_arms"
 
