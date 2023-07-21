@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2023-07-10 17:32:28
- * @LastEditTime: 2023-07-19 17:30:00
+ * @LastEditTime: 2023-07-21 16:57:42
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /aliyun_arms/lib/aliyun_arms.dart
@@ -37,9 +37,6 @@ class AliyunArms {
       (Platform.isAndroid && appkey != null) ||
           (Platform.isIOS && appkey != null),
     );
-    assert((Platform.isAndroid &&
-        isAndroidSupportAPM == '1' &&
-        isAndroidRsaSecret != ''));
     Map<String, Object?> map = {
       "appKey": appkey,
       "appVersion": appVersion,
