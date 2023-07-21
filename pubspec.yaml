@@ -1,8 +1,8 @@
 name: aliyun_arms
 description: A new Flutter plugin project.
 version: 1.0.0
-homepage: "https://gitee.com/MacMay/aliyun_arms"
-publish_to: 'https://gitee.com/MacMay/aliyun_arms.git'
+homepage: "https://github.com/vsguji/aliyun_arms"
+publish_to: 'https://github.com/vsguji/aliyun_arms.git'
 
 environment:
   sdk: '>=2.19.2 <3.0.0'
