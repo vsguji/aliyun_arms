@@ -4,15 +4,15 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'aliyun_arms'
-  s.version          = '0.0.1'
-  s.summary          = 'A new Flutter plugin project.'
+  s.version          = '1.0.1'
+  s.summary          = '阿里ARMS,应用实时检测'
   s.description      = <<-DESC
-A new Flutter plugin project.
+  阿里ARMS,应用实时检测
                        DESC
-  s.homepage         = 'http://example.com'
+  s.homepage         = 'https://github.com/vsguji/aliyun_arms'
   s.license          = { :file => '../LICENSE' }
-  s.author           = { 'Your Company' => 'email@example.com' }
-  s.source           = { :path => '.' }
+  s.author           = { 'Your Company' => 'vsguji_2012@sina.com' }
+  s.source           = { :git => 'https://github.com/vsguji/aliyun_arms.git' }
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
