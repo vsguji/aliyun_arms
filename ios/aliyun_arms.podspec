@@ -12,9 +12,9 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/vsguji/aliyun_arms'
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'Your Company' => 'vsguji_2012@sina.com' }
-  s.source           = { :git => 'https://github.com/vsguji/aliyun_arms.git' }
-  s.source_files = 'Classes/**/*'
-  s.public_header_files = 'Classes/**/*.h'
+  s.source           = { :git => 'https://github.com/vsguji/aliyun_arms.git',:branch => 'main' }
+  s.source_files = 'ios/Classes/*.{h,m}'
+  s.public_header_files = 'ios/Classes/*.h'
   s.dependency 'Flutter'
   
   #
