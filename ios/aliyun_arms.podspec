@@ -16,7 +16,8 @@ Pod::Spec.new do |s|
   s.source_files = 'ios/Classes/*.{h,m}'
   s.public_header_files = 'ios/Classes/*.h'
   s.dependency 'Flutter'
-  
+  #
+  s.static_framework = true
   #
   s.platform = :ios, '9.0'
   #
@@ -32,4 +33,6 @@ Pod::Spec.new do |s|
 
   # Flutter.framework does not contain a i386 slice.
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
+  # 
+  # spec.script_phase = { :name => 'find_and_replace', :script => 'deffind_and_replace(dir,findstr,replacestr)Dir[dir].eachdo|name|text=File.read(name)replace=text.gsub(findstr,replacestr)iftext!=replaceputs"Fix:"+nameFile.open(name,"w"){|file|file.putsreplace}STDOUT.flushendendDir[dir+'*/'].each(&method(:find_and_replace))end',:execution_position => :before_compile }
 end

@@ -1,16 +1,16 @@
 /*
  * @Author: your name
  * @Date: 2023-07-10 17:32:28
- * @LastEditTime: 2023-07-19 17:24:39
+ * @LastEditTime: 2023-08-14 15:44:01
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /aliyun_arms/example/lib/main.dart
  */
 import 'package:flutter/material.dart';
 import 'dart:async';
-import 'package:get/get.dart';
 import 'package:flutter/services.dart';
 import 'package:aliyun_arms/aliyun_arms.dart';
+import 'package:get/get.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -23,7 +23,8 @@ void main() {
       channel: 'huawei',
       userNick: 'mendianHexiao',
       isAliyunos: '0');
-  AliyunArms.postCatchedException(() => runApp(const MyApp()),debugUpload: true);
+  AliyunArms.postCatchedException(() => runApp(const MyApp()),
+      debugUpload: true);
 }
 
 class MyApp extends StatefulWidget {

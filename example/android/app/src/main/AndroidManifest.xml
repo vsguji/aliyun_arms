@@ -1,9 +1,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.pengsheng.demoarms" android:versionCode="1" android:versionName="V1.0.0">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.jufubao.mendianhexiao"
+    android:versionCode="1"
+    android:versionName="V1.0.0">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 读写-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
    <application
-        android:label="demo"
+       tools:replace="android:label"
+        android:label="flutter_bloc_pattern"
         android:name=".MyApplication"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/ic_launcher"
+        android:usesCleartextTraffic="true">
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -30,5 +39,8 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+       <meta-data
+           android:name="com.mob.mobpush.debugLevel"
+           android:value="4" />
     </application>
 </manifest>

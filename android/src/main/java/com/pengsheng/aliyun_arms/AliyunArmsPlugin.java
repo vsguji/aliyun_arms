@@ -174,7 +174,7 @@ public class AliyunArmsPlugin implements FlutterPlugin, MethodCallHandler, Activ
       config.channel = parameter.get("channel").toString();
       config.userNick = parameter.get("userNick").toString();
       config.application = activity.getApplication();
-      config.context = activity;
+      config.context = activity.getApplicationContext();
       config.isAliyunos = parameter.get("isAliyunos").equals("1");
       Boolean isSupportAPM = parameter.get("isAndroidSupportAPM").equals("1");
       if (isSupportAPM) {
@@ -190,6 +190,8 @@ public class AliyunArmsPlugin implements FlutterPlugin, MethodCallHandler, Activ
     }catch (Exception e) {
       TLogService.loge("initConfig",TAG,e.getMessage());
     }
+    AliHaAdapter.getInstance().openHttp(true);
+    AliHaAdapter.getInstance().openDebug(true);
     return AliHaAdapter.getInstance().start(config);
   }
 

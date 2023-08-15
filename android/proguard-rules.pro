@@ -33,3 +33,7 @@
 -keep class com.uc.crashsdk.**{*;}
 -keep interface com.ut.mini.crashhandler.*{*;}
 -keepattributes Exceptions,InnerClasses,Signature,Deprecated,SourceFile,LineNumberTable,*Annotation*,EnclosingMethod
+
+-keep class com.taobao.tao.log.**{*;}
+-keep public class * extends com.taobao.android.tlog.protocol.model.request.base.FileInfo{*;}
+-keepattributes Exceptions,InnerClasses,Signature,Deprecated,SourceFile,LineNumberTable,*Annotation*,EnclosingMethod
