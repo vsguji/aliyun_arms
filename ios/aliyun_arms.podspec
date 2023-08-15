@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'aliyun_arms'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = '阿里ARMS,应用实时检测'
   s.description      = <<-DESC
   阿里ARMS,应用实时检测
