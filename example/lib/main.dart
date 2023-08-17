@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2023-07-10 17:32:28
- * @LastEditTime: 2023-08-14 15:44:01
+ * @LastEditTime: 2023-08-17 09:47:07
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /aliyun_arms/example/lib/main.dart
@@ -14,15 +14,24 @@ import 'package:get/get.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
+  // AliyunArms.init(
+  //     appkey: '333871883',
+  //     appVersion: 'V1.0.1',
+  //     appSecret: '457e37fe28404aaca94500e1b4191dd4',
+  //     isAndroidRsaSecret:
+  //         'MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCR4I3JYsfArCw1f025qpuaeTU0cPC6VDwMGPfDeGLyAM432wXZMvFIm2U2w78t3f/WenL8zUYZ6AgTgOapuY3h8vGm5V4HI8/QzDXl+lHhkq+Vhlvi2upkwdVicFborBHVjSdvJK9Z97+JHyl6syJ1xDZ8OkYz5UjKiP29LDjDAQIDAQAB',
+  //     channel: 'huawei',
+  //     userNick: 'mendianHexiao',
+  //     isAliyunos: '0');
   AliyunArms.init(
-      appkey: '333871883',
+      appkey: '333869771',
       appVersion: 'V1.0.1',
-      appSecret: '457e37fe28404aaca94500e1b4191dd4',
+      appSecret: 'ccc565b6f1bc4187a853cf0ce9ec420d',
       isAndroidRsaSecret:
           'MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCR4I3JYsfArCw1f025qpuaeTU0cPC6VDwMGPfDeGLyAM432wXZMvFIm2U2w78t3f/WenL8zUYZ6AgTgOapuY3h8vGm5V4HI8/QzDXl+lHhkq+Vhlvi2upkwdVicFborBHVjSdvJK9Z97+JHyl6syJ1xDZ8OkYz5UjKiP29LDjDAQIDAQAB',
       channel: 'huawei',
       userNick: 'mendianHexiao',
-      isAliyunos: '0');
+      isAliyunos: '1');
   AliyunArms.postCatchedException(() => runApp(const MyApp()),
       debugUpload: true);
 }
