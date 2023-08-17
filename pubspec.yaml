@@ -1,6 +1,6 @@
 name: aliyun_arms
 description: ARMS 包含前端监控、应用监控、云拨测等模块。覆盖浏览器、小程序、APP、分布式应用、容器等不同可观测环境与场景。
-version: 1.0.2
+version: 1.0.3
 homepage: "https://github.com/vsguji/aliyun_arms"
 
 environment:
